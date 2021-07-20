@@ -1,0 +1,9 @@
+host=103.157.1xx.xx
+port=443
+pudp=7300
+user=ryanxxxx
+pass=123xxx
+sni=www.netflix.com
+vmess://eyJhZGQiOixxxxxxx
+trojan://fbe87e2b-b076-4a83-8e50-5c36dc4e3689@v2-id1.myvpskuy.xyz:443
+
