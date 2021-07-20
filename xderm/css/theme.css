@@ -1,0 +1,298 @@
+@import "https://fonts.googleapis.com/css?family=Ubuntu:400,700italic";
+@import "https://fonts.googleapis.com/css?family=Cabin:400";
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background: url('../img/background.jpg');
+    background-size: cover;
+    font-size: 10px;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    margin-top: 15px;
+}
+
+/* =========================================
+Stark Industries Logo
+========================================= */
+#logo {
+    animation: logo-entry 4s ease-in;
+    width: 370px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 40;
+}
+
+h1 {
+    font-family: "Courier New", Courier;
+    font-size: 32px;
+    font-weight: bold;
+    position: absolute;
+    top: 60px;
+}
+
+h1:before {
+    animation: before-glow 2s ease-out infinite alternate;
+    border-left: 395px solid transparent;
+    border-bottom: 5px solid #00a4a2;
+    content: ' ';
+    height: 0;
+    position: absolute;
+    right: -74px;
+    top: -10px;
+    width: 0;
+}
+
+h1:after {
+    animation: after-glow 2s ease-out infinite alternate;
+    border-left: 80px solid transparent;
+    border-top: 2px solid #00a4a2;
+    content: ' ';
+    height: 0;
+    position: absolute;
+    right: -80px;
+    top: 16px;
+    transform: rotate(-46deg);
+    width: 0;
+}
+
+/* =========================================
+Log in form
+========================================= */
+#fade-box {
+    animation: input-entry 3s ease-in;
+    z-index: 4;
+}
+
+.stark-login form {
+    animation: form-entry 3s ease-in-out;
+    background: #111;
+    background: transparent;
+    border: 2px solid #0300a4;
+    box-shadow: 0 0 15px #001aff;
+    border-radius: 5px;
+    display: inline-block;
+    height: 165px;
+    margin: 155px auto 0;
+    position: relative;
+    z-index: 8;
+    width: 300px;
+    transition: 1s all;
+}
+
+.stark-login form:hover {
+    border: 4px solid #001aff;
+    box-shadow: 0 0 25px #001aff;
+    transition: 1s all;
+}
+
+.stark-login input {
+    background: #222;
+    background: linear-gradient(#333333, #222222);
+    text-align: center;
+    border: 1px solid #444;
+    border-radius: 5px;
+    box-shadow: 0 2px 0 #000;
+    color: #888;
+    display: block;
+    font-family: 'Cabin', helvetica, arial, sans-serif;
+    font-size: 13px;
+    font-size: 1.3rem;
+    height: 30px;
+    margin: 15px auto 8px;
+    padding: 0 10px;
+    text-shadow: 0 -1px 0 #000;
+    width: 260px;
+}
+
+.stark-login input:focus {
+    animation: box-glow 1s ease-out infinite alternate;
+    background: #0B4252;
+    background: linear-gradient(#333933, #222922);
+    border-color: #00fffc;
+    box-shadow: 0 0 5px rgba(0, 255, 253, 0.2), inset 0 0 5px rgba(0, 255, 253, 0.1), 0 2px 0 black;
+    color: #efe;
+    outline: none;
+}
+
+.stark-login input:invalid {
+    border: 2px solid red;
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.2), inset 0 0 5px rgba(255, 0, 0, 0.1), 0 2px 0 black;
+}
+
+.stark-login button {
+    animation: input-entry 3s ease-in;
+    background: #222;
+    background: linear-gradient(#333333, #222222);
+    box-sizing: content-box;
+    border: 1px solid #444;
+    border-left-color: #000;
+    border-radius: 5px;
+    box-shadow: 0 2px 0 #000;
+    color: #fff;
+    display: block;
+    font-family: 'Cabin', helvetica, arial, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    height: 30px;
+    line-height: 30px;
+    margin: 15px auto;
+    padding: 0;
+    position: relative;
+    text-shadow: 0 -1px 0 #000;
+    width: 260px;
+    cursor: pointer;
+    text-transform: UPPERCASE;
+    transition: 1s all;
+}
+
+.stark-login button:hover,
+.stark-login button:focus {
+    background: #0C6125;
+    background: linear-gradient(#393939, #292929);
+    color: #00fffc;
+    outline: none;
+    transition: 1s all;
+}
+
+.stark-login button:active {
+    background: #292929;
+    background: linear-gradient(#393939, #292929);
+    box-shadow: 0 1px 0 #000, inset 1px 0 1px #222;
+    top: 1px;
+}
+
+.nganu {
+    font-weight: bold;
+    z-index: 42;
+    background: repeating-linear-gradient(-45deg, red 0%, yellow 7.14%, rgb(0, 255, 0) 14.28%,
+            rgb(0, 255, 255) 21.4%, cyan 28.56%, blue 35.7%, magenta 42.84%, red 50%);
+    background-size: 600vw 600vw;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: slide 3s linear infinite forwards;
+    font-family: "Courier New", Courier;
+    text-transform: UPPERCASE;
+}
+
+@keyframes slide {
+    0% {
+        background-position-x: 0%;
+    }
+
+    100% {
+        background-position-x: 600vw;
+    }
+}
+
+/* =========================================
+Animation Keyframes
+========================================= */
+@keyframes logo-entry {
+    0% {
+        opacity: 0;
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes circle-entry {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0.4;
+    }
+}
+
+@keyframes input-entry {
+    0% {
+        opacity: 0;
+    }
+
+    90% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes form-entry {
+    0% {
+        height: 0;
+        width: 0;
+        opacity: 0;
+        padding: 0;
+    }
+
+    20% {
+        height: 0;
+        border: 1px solid #001aff;
+        width: 0;
+        opacity: 0;
+        padding: 0;
+    }
+
+    40% {
+        width: 0;
+        height: 165px;
+        border: 6px solid #001aff;
+        opacity: 1;
+        padding: 0;
+    }
+
+    100% {
+        height: 165px;
+        width: 300px;
+    }
+}
+
+@keyframes box-glow {
+    0% {
+        border-color: #001aff;
+        box-shadow: 0 0 5px rgba(4, 0, 255, 0.2), inset 0 0 5px rgba(25, 0, 255, 0.1), 0 2px 0 black;
+    }
+
+    100% {
+        border-color: #001aff;
+        box-shadow: 0 0 20px rgba(4, 0, 255, 0.6), inset 0 0 10px rgba(17, 0, 255, 0.4), 0 2px 0 black;
+    }
+}
+
+@keyframes before-glow {
+    0% {
+        border-bottom: 10px solid #1100ff;
+    }
+
+    100% {
+        border-bottom: 10px solid #ff0000;
+    }
+}
+
+@keyframes after-glow {
+    0% {
+        border-top: 16px solid #1100ff;
+    }
+
+    100% {
+        border-top: 16px solid #ff0000;
+    }
+}
