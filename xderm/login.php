@@ -16,7 +16,7 @@ alert("Username atau Password salah!");
 }
 echo '<!DOCTYPE html><html><head>
 <meta name="viewport" content="width=device-width">
-<link rel="shortcut icon" href="img/fav.ico">
+<link rel="shortcut icon" href="img/ico.png">
 <title>Xderm Mini Gui versi</title>
 <link type="text/css" rel="stylesheet" href="css/login.css">
 <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script></head>
