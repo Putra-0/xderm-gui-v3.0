@@ -37,7 +37,8 @@ if ($show == "home"){
             </form>
 	<footer class="nganu slide">
 	<div  style="font-size: 16px; margin-top:15px; animation: logo-entry 3s ease-in;">
-	Xderm GUI V.3.0  <br>Â© Design by ADI-PUTRA <br>Copyright Â© Ryan Fauzi
+	â€¢Logo by Helmi Amirudinâ€¢<br>â€¢Design by ADI-PUTRAâ€¢<br>
+		Xderm V.3.0 â€¢ Copyright &copy Ryan Fauzi
 	</div> 
 	</footer>
 	</div>
