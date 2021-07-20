@@ -81,8 +81,6 @@ if ( window.history.replaceState ) {
 }
 </script>
 <script type="text/javascript">
-///GET WAN IP////
-
     $(document).ready(function() {
         setInterval(function() {
             $.ajax({
@@ -98,8 +96,7 @@ if ( window.history.replaceState ) {
                 var textarea = document.getElementById("log");
                 textarea.scrollTop = textarea.scrollHeight;
         }, 1000);
-    });
-/////REFRESH////	
+    });	
 	$(document).ready(function(){
 		$('#div_refresh').load("addon.php");
 			setInterval(function(){
