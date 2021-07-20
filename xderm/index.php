@@ -59,6 +59,58 @@ if ( window.history.replaceState ) {
   window.history.replaceState( null, null, window.location.href );
 }
 </script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        setInterval(function() {
+            $.ajax({
+                url: "screenlog.0",
+		cache: false,
+                success: function(result) {
+		    $("#log").html(result);
+                }
+            });
+        $(document).ready(function() {
+                $.ajaxSetup({ cache: false });
+                        });
+                var textarea = document.getElementById("log");
+                textarea.scrollTop = textarea.scrollHeight;
+        }, 1000);
+    });
+if ( window.history.replaceState ) {
+  window.history.replaceState( null, null, window.location.href );
+}
+</script>
+<script type="text/javascript">
+///GET WAN IP////
+
+    $(document).ready(function() {
+        setInterval(function() {
+            $.ajax({
+                url: "screenlog.0",
+		cache: false,
+                success: function(result) {
+		    $("#log").html(result);
+                }
+            });
+        $(document).ready(function() {
+                $.ajaxSetup({ cache: false });
+                        });
+                var textarea = document.getElementById("log");
+                textarea.scrollTop = textarea.scrollHeight;
+        }, 1000);
+    });
+/////REFRESH////	
+	$(document).ready(function(){
+		$('#div_refresh').load("addon.php");
+			setInterval(function(){
+				$('#div_refresh').load("addon.php");
+		},1000);
+	});
+if ( window.history.replaceState ) {
+  window.history.replaceState( null, null, window.location.href );
+}
+</script>
+
 <body>
 <div class="block moving-glow">
 	<center>
@@ -85,6 +137,16 @@ if ( window.history.replaceState ) {
 				</td></tr>
 			</table>
 		</center>
+<table align="center" style="margin-top:-20px";margin-bottom:10px;">
+	<tr class="col-butt">
+		<h4 id="div_refresh"></h4>
+		<td style="width:150px;padding-top:5px" class="glow-on-hover"><span style="color:red">IP: </span><span id="ip"></span>	
+		</td>
+		<td style="width:200px;padding-top:5px" class="glow-on-hover"><span style="color:red">ISP: </span><span id="isp" ></span></td	
+	
+	</tr>
+</table>
+
 <?php
   exec('cat /var/update.xderm',$z);
     if ($z[0]) {
@@ -278,8 +340,7 @@ echo '<div id="log" class="scroll"></div></pre></div>';
 </table></head>
 <center><br>
 	<div class="nganu slide" style="height:54px">
-        Xderm GUI V.3.0<br>
-		&copy Design by Adi Putra<br>
-		Copyright &copy Ryan Fauzi
+        â€¢Logo by Helmi Amirudinâ€¢<br>â€¢Design by ADI-PUTRAâ€¢<br>
+		Xderm V.3.0 â€¢ Copyright &copy Ryan Fauzi
     </div><br></center></div>
 </html>
